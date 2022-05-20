@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\2.Application\Company.Application\Company.Application.csproj" />
+    <ProjectReference Include="..\..\3.Domain\Company.Domain\Company.Domain.csproj" />
+    <ProjectReference Include="..\..\4.Infrastructure\Company.Persistance.Ef\Company.Persistance.Ef.csproj" />
+  </ItemGroup>
+
+</Project>
