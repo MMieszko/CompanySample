@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.Persistance.Ef", "4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.Domain.Tests", "3.Domain\Company.Domain.Tests\Company.Domain.Tests.csproj", "{4C34AD75-E0B0-43DE-AF18-BAA94F493625}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.Application.Tests", "Company.Application.Tests\Company.Application.Tests.csproj", "{C14E1751-D868-4F4F-9238-B8E48A485A07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.Application.Tests", "2.Application\Company.Application.Tests\Company.Application.Tests.csproj", "{C14E1751-D868-4F4F-9238-B8E48A485A07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
