@@ -6,13 +6,15 @@ namespace Company.Domain.Models.Employees
 {
     public class EmployeeRegistrationNumber : SinglePropertyValueObject<string>
     {
-        public const int ValidLength = 8;
-        public int IntegerValue => int.Parse(Regex.Match(this.Value, @"\d+").Value);
+        public const int MaxLength = 8;
+        private const int MinimumIntegerValue = 1;
+
+        internal int IntegerValue => int.Parse(Regex.Match(this.Value, @"\d+").Value);
 
         internal EmployeeRegistrationNumber(int value)
-            : base(value.ToString("D8"))
+            : base(value.ToString($"D{MaxLength}"))
         {
-            if (value < 1 || value.ToString().Length > ValidLength)
+            if (value < MinimumIntegerValue || value.ToString().Length > MaxLength)
                 throw new ObjectCreationException(nameof(EmployeeRegistrationNumber), $"Incorrect value: {value}");
         }
     }
